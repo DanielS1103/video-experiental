@@ -1,0 +1,5 @@
+# Python 3.10 - 3.12 (mediapipe aun no soporta 3.13)
+# mediapipe instala opencv-contrib-python por su cuenta; no instales opencv-python aparte.
+mediapipe==0.10.14
+numpy<2
+websockets>=13
