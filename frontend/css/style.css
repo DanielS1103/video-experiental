@@ -11,7 +11,19 @@ body.idle { cursor: none; }
   pointer-events: none; transition: opacity .3s;
 }
 #hud.hidden { opacity: 0; }
+#hud #status { white-space: pre-line; }
 #hud pre { margin: 6px 0 0; font: inherit; color: #9aa; }
+
+#modeName {
+  position: fixed; inset: 0; z-index: 6; pointer-events: none;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px;
+  font-family: ui-monospace, Menlo, Consolas, monospace; color: #fff;
+  text-shadow: 0 0 18px rgba(0, 0, 0, .8);
+  opacity: 0; transition: opacity .6s;
+}
+#modeName.show { opacity: 1; }
+#modeName b { font-size: clamp(28px, 6vw, 72px); letter-spacing: .25em; }
+#modeName span { font-size: clamp(12px, 1.6vw, 20px); opacity: .8; }
 
 #drop {
   position: fixed; inset: 0; z-index: 10; display: none;
