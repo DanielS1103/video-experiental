@@ -1,5 +1,4 @@
-# Instalación interactiva: video en bucle con dos modos (NOSTALGIA / ANSIEDAD)
-
+# Instalación interactiva: video en bucle con dos modos
 ```
 instalacion_kinect/
 ├── backend/   Python: webcam -> MediaPipe (manos) + movimiento -> WebSocket (:8765)
